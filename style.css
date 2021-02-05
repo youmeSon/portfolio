@@ -13,7 +13,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-green: #41584b;
+  --color-green: #3a4e43;
   --color-dark-green: #232f29;
   --color-beige: #f4edda;
 
@@ -50,8 +50,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -90,7 +100,7 @@ p {
   background-color: var(--color-green);
   align-items: center;
   color: var(--color-beige);
-  padding: 16px;
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -115,4 +125,33 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-green);
+}
+
+/* Home */
+#home {
+  background: url("imgs/background.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-beige);
+}
+
+.home__contact {
+  color: var(--color-beige);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-beige);
+  border-radius: var(--size-border-radius);
 }
