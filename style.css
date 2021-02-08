@@ -134,6 +134,14 @@ p {
   background-color: var(--color-dark-green);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 14px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-beige);
+  display: none;
+}
 /* Home */
 #home {
   background: url("imgs/background.png") center/cover no-repeat;
@@ -463,4 +471,43 @@ p {
 
 .contact_rights {
   font-size: var(--font-micro);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
