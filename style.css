@@ -433,3 +433,34 @@ p {
 .testimonial__speech-bubble a {
   color: var(--color-pink);
 }
+
+/* Contact */
+#contact {
+  background-color: var(--color-original-green);
+}
+.contact__title,
+.contact__email,
+.contact_rights {
+  color: var(--color-beige);
+}
+
+.contact__title {
+  margin: 32px;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+.contact__links i {
+  transition: all var(--animation-duration) ease-in;
+  padding: 8px;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-orange);
+}
+
+.contact_rights {
+  font-size: var(--font-micro);
+}
