@@ -150,6 +150,7 @@ p {
   color: var(--color-beige);
   display: none;
 }
+
 /* Home */
 #home {
   background: url("imgs/background.png") center/cover no-repeat;
@@ -480,6 +481,27 @@ p {
 
 .contact_rights {
   font-size: var(--font-micro);
+}
+
+/* Arrow button */
+.arrow-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 18px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-dark-green);
+  border-radius: 50%;
+  color: var(--color-beige);
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity var(--animation-duration) ease-in;
+  pointer-events: none;
+}
+
+.arrow-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
