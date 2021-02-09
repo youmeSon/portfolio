@@ -1,5 +1,11 @@
 'use strict'
 
+// Methods
+function scrollIntoView(selector) { //우리가 정의한 함수
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior: "smooth"}); // DOM 요소의 함수
+}
+
 // Make navbar transparent it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -28,8 +34,9 @@ contactMe.addEventListener('click', () => {
   scrollIntoView('#contact');
 })
 
-// Methods
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior: "smooth"});
-}
+//Make home slowly fade to trasparent as the window scrolls down
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+})
