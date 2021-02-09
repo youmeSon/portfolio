@@ -35,8 +35,20 @@ contactMe.addEventListener('click', () => {
 })
 
 //Make home slowly fade to trasparent as the window scrolls down
-const home = document.querySelector('.home__container');
+const home = document.querySelector('#home');
 const homeHeight = home.getBoundingClientRect().height;
+const homeContainer = document.querySelector('.home__container')
 document.addEventListener('scroll', () => {
-  home.style.opacity = 1 - window.scrollY / homeHeight;
+  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+  contactMe.style.opacity = 1 - window.scrollY / homeHeight;
+})
+
+// When mouse on 'contact me' button -> recover opacity
+contactMe.addEventListener('mouseenter', () => {
+  contactMe.style.opacity = 1;
+})
+
+// When mouse off 'contact me' button -> lose opacity again 
+contactMe.addEventListener('mouseleave', () => {
+  contactMe.style.opacity = 1 - window.scrollY / homeHeight;
 })
