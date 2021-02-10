@@ -335,9 +335,9 @@ p {
   background-color: var(--color-orange);
   border-radius: 50%;
   color: var(--color-beige);
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
   display: inline-block;
   position: relative;
   top: -20px;
@@ -356,6 +356,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -367,6 +374,10 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
