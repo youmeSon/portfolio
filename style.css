@@ -132,6 +132,7 @@ p {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  border: 1px solid transparent;
 }
 
 .navbar__menu__item.active {
@@ -140,6 +141,7 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-green);
+  border-color: var(--color-beige);
 }
 
 .navbar__toggle-btn {
@@ -325,7 +327,7 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-original-green);
   color: var(--color-beige);
@@ -335,9 +337,9 @@ p {
   background-color: var(--color-orange);
   border-radius: 50%;
   color: var(--color-beige);
-  width: 26px;
-  height: 26px;
-  line-height: 26px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   display: inline-block;
   position: relative;
   top: -20px;
@@ -346,7 +348,7 @@ p {
   transition: all var(--animation-duration) ease;
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
