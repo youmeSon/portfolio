@@ -132,7 +132,6 @@ p {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-  border: 1px solid transparent;
 }
 
 .navbar__menu__item.active {
