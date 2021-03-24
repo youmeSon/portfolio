@@ -25,7 +25,7 @@
       <li class="navbar__menu__item" data-link="#about">About</li>
       <li class="navbar__menu__item" data-link="#skills">Skills</li>
       <li class="navbar__menu__item" data-link="#work">My work</li>
-      <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+      <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li> -->
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
 
@@ -41,14 +41,14 @@
     <div class="home__container">
       <img src="imgs/Profile.jpg" alt="Youme's profile photo" class="home__avatar">
       <h1 class="home__title">Hello, <br />I'm Youme Son</h1>
-      <h2 class="home__description">A Front-end developer currently in Birmingham, UK</h2>
+      <h2 class="home__description">A Front-end developer full of enthusiasm for learning</h2>
     </div>
     <button class="home__contact">Contact me</button>
   </section>
   <!-- About-->
   <section id="about" class="section section__container">
     <h1>About me</h1>
-    <p>I'm a self-taught front-end developer who is highly motivated and proactive. <br />I'm passionate to make few responsive web pages and projects. Also interested in back-end development, <br />so I want to grow into a manpower that can participate in back-end projects as well as front-ends in the future.</p>
+    <p>I'm a self-taught front-end developer who is highly motivated and proactive. <br />I am also interested in backend development, and aspire to grow my skills to the point where I can eventually work comfortably across the full stack.</p>
     <div class="about__majors">
       <!-- Front-end -->
       <div class="major">
@@ -113,7 +113,7 @@
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
-        Passion for learning new technologies. Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.
+        Passion for learning new technologies. <br />Capable of working within a team environment and independently. <br />Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed.
       </p>
       <div class="skillset">
         <div class="skillset__left">
@@ -121,10 +121,10 @@
           <div class="skill">
             <div class="skill__description">
               <span>HTML</span>
-              <span>85%</span>
+              <span>80%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 85%"></div>
+              <div class="skill__value" style="width: 80%"></div>
             </div>
           </div>
           <div class="skill">
@@ -139,19 +139,19 @@
           <div class="skill">
             <div class="skill__description">
               <span>JavaScript</span>
-              <span>80%</span>
+              <span>75%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 80%"></div>
+              <div class="skill__value" style="width: 75%"></div>
             </div>
           </div>
           <div class="skill">
             <div class="skill__description">
               <span>TypeScript</span>
-              <span>75%</span>
+              <span>30%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 75%"></div>
+              <div class="skill__value" style="width: 30%"></div>
             </div>
           </div>
           <div class="skill">
@@ -166,26 +166,33 @@
           <div class="skill">
             <div class="skill__description">
               <span>C#</span>
-              <span>70%</span>
+              <span>60%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 70%"></div>
+              <div class="skill__value" style="width: 60%"></div>
             </div>
           </div>
         </div>
         <div class="skillset_right">
           <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
+            <h3 class="skillset__title">Frameworks and Libraries</h3>
             <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-              <li><span></span>AA</li>
-              <li><span></span>BB</li>
+              <li><span>Bootstrap</span></li>
+              <li><span>jQuery</span></li>
+              <li><span>React</span></li>
             </ul>
           </div>
           <div class="etc">
             <h3 class="skillset__title">Etc</h3>
             <ul class="etc__list">
               <li><span>Git</span></li>
+              <li><span>GitHub</span></li>
+              <li><span>PostCss</span></li>
+              <li><span>Postman</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Chrome Developer Tools</span></li>
+              <li><span>Slack</span></li>
+              <li><span>Web APIs</span></li>
             </ul>
 
           </div>
@@ -201,87 +208,87 @@
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">All<span class="category__count">10</span></button>
-        <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">4</span></button>
-        <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">4</span></button>
+        <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">7</span></button>
+        <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">1</span></button>
         <button class="category__btn" data-filter="game">Game<span class="category__count">2</span></button>
       </div>
 
       <div class="work__projects">
-        <a href="https://youmeson.github.io/wally/" class="project" target="blank" data-type="game">
+        <a href="https://youmeson.github.io/wally" class="project" target="blank" data-type="game">
         <img class="project__img" src="./imgs/projects//where_is_wally.png" alt="where-is-wally">
         <div class="project__description">
           <h3>Where's wally?</h3>
-          <span>Where's wally game with HTML, CSS, JavaScript (including a GET request to an external API)</span>
+          <span>A browser-based game built with HTML, CSS, JavaScript (including a GET request to an external API)</span>
         </div>
         </a>
-        <a href="https://youmeson.github.io/shopping_list/" class="project" target="blank" data-type="front-end">
+        <a href="https://youmeson.github.io/youtube" class="project" target="blank" data-type="front-end">
+          <img class="project__img" src="./imgs/projects/youTube_Clone.png" alt="Youtube">
+          <div class="project__description">
+            <h3>YouTube Clone</h3>
+            <span>A simple YouTube page built with the YouTube API, React and PostCSS</span>
+          </div>
+        </a>
+        <a href="https://youmeson.github.io/shopping_list" class="project" target="blank" data-type="front-end">
           <img class="project__img" src="./imgs/projects/shoppingList.png" alt="shopping-list">
           <div class="project__description">
             <h3>Shopping List</h3>
-            <span>Shopping List with HTML, CSS and JavaScript</span>
+            <span>A shopping List with HTML, CSS and JavaScript</span>
           </div>
           </a>
-          <a href="#" class="project" target="blank" data-type="back-end">
-        <img class="project__img" src="./imgs/projects/weather_app.png" alt="Weather App">
-        <div class="project__description">
-          <h3>Weather App</h3>
-          <span>Weather app with HTML, CSS, JavaScript, and Web API</span>
-        </div>
-        </a>
-        <a href="https://youmeson.github.io/carrot_game_retry/" class="project" target="blank" data-type="game">
+        <a href="https://youmeson.github.io/carrot_game_retry" class="project" target="blank" data-type="game">
           <img class="project__img" src="./imgs/projects/carrot_game.png" alt="Carrot game">
           <div class="project__description">
             <h3>Carrot game</h3>
-            <span>Carrot game with HTML,CSS and JavaScript</span>
+            <span>A browser-based game built with HTML,CSS and JavaScript</span>
           </div>
         </a>
-        <a href="https://youmeson.github.io/coordinate_007/" class="project" target="blank" data-type="back-end">
+        <a href="https://youmeson.github.io/coordinate_007" class="project" target="blank" data-type="front-end">
           <img class="project__img" src="./imgs/projects/coordinate007.png" alt="coordinate007">
           <div class="project__description">
             <h3>coordinate 007</h3>
             <span>Coordinate the location when mouse move with HTML, CSS and JavaScript</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank" data-type="back-end">
-          <img class="project__img" src="./imgs/projects/sweetshop.png" alt="Sweets shop">
-          <div class="project__description">
-            <h3>Dessert shop Website</h3>
-            <span>Dessert website with HTML,CSS and JavaScript</span>
-          </div>
-        </a>
-        <a href="https://youmeson.github.io/club-website/" data-type="game" class="project" target="blank">
-          <img class="project__img" src="./imgs/projects/club_vera.png" alt="club-website">
-          <div class="project__description">
-            <h3>Club Website</h3>
-            <span>Club website with HTML, CSS and JavaScript</span>
-          </div>
-          </a>
-          <a href="#" class="project" target="blank" data-type="front-end">
-            <img class="project__img" src="./imgs/projects/youtube.png"  valt="youtube">
-            <div class="project__description">
-              <h3>Youtube Site</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a href="#" class="project" target="blank"  data-type="back-end">
+          <a href="https://youmeson.github.io/online-shopping-mall" class="project" target="blank"  data-type="front-end">
             <img class="project__img" src="./imgs/projects/onlineShopping.png"alt="Online Shopping mall">
             <div class="project__description">
               <h3>Online Shopping App</h3>
-              <span>Online Shopping app with HTML,CSS and JavaScript</span>
+              <span>A simple online Shopping app with HTML,CSS and JavaScript</span>
             </div>
           </a>
-          <a href="#" class="project" target="blank" data-type="game">
-            <img class="project__img" src="./imgs/projects/sweetshop.png" alt="Sweets shop">
+          <a href="https://youmeson.github.io/bird_slideshow" class="project" target="blank"  data-type="front-end">
+            <img class="project__img" src="./imgs/projects/bird_slide_show.png"alt="UK bird slide show">
             <div class="project__description">
-              <h3>Dessert shop Website</h3>
-              <span>Dessert website with HTML,CSS and JavaScript</span>
+              <h3>Bird slide show</h3>
+              <span>A simple slide show with JQuery</span>
             </div>
-          </a>
+          </a>  
+          <a href="https://youmeson.github.io/habit-tracker-new" class="project" target="blank"  data-type="front-end">
+            <img class="project__img" src="./imgs/projects/habit-tracker.png"alt="habit tracker">
+            <div class="project__description">
+              <h3>habit-tracker</h3>
+              <span>A habit tracker built with React</span>
+            </div>
+          </a>   
+          <a href="https://github.com/youmeSon/WeatherConsoleApp" class="project" target="blank" data-type="back-end">
+            <img class="project__img" src="./imgs/projects/weather_app.png" alt="Weather App">
+            <div class="project__description">
+              <h3>Weather App</h3>
+              <span>Weather app with HTML, CSS, JavaScript, and Web API</span>
+            </div>
+          </a> 
+          <a href="https://youmeson.github.io/Bootsrap-website" class="project" target="blank"  data-type="front-end">
+            <img class="project__img" src="./imgs/projects/company.png"alt="simple website">
+            <div class="project__description">
+              <h3>Company website</h3>
+              <span>A website built with Bootstrap</span>
+            </div>
+          </a>    
       </div>
     </div>
     
   </section>
-  <!-- Testimonial -->
+  <!-- Testimonial
   <section id="testimonials" class="section">
     <div class="section__container">
       <h1>Testimonial</h1>
@@ -302,7 +309,7 @@
           <img src="imgs/testimonial/man.jpg" alt="man" class="testimonial__avatar">
         </div>
       </div>
-    </div>
+    </div> -->
     
   </section>
   <!-- Contact -->
@@ -310,11 +317,11 @@
     <h1 class="contact__title">Let's talk</h1>
     <h2 class="contact__email">
       <i class="far fa-envelope-open"></i>
-      <span>youme.coder@gmail.com</span>
+      <span>rosydarling@naver.com</span>
     </h2>
     <h2 class="contact__mobile">
       <i class="fas fa-mobile-alt"></i>
-      <span>07957-427005</span>
+      <span>07957 427005</span>
     </h2>
     <div class="contact__links">
       <a href="https://github.com/youmeSon" target="_blank">
@@ -325,7 +332,7 @@
       </a>
     </div>
     <p class="contact__rights">
-      2021 Youme Coding - All rights reserved
+      2021 Youme - All rights reserved
     </p>
   </section>
 
